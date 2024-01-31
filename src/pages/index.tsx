@@ -77,7 +77,7 @@ export default function Home() {
         {dataArray.map((item: Data, index) => (
           <div className="flex flex-row m-auto" key={index}>
             <Item
-              thumbnail={item.thumbnail}
+              thumbnail={item.meme}
               original={item.meme}
               width="1024"
               height="768"
@@ -86,7 +86,7 @@ export default function Home() {
                 <img
                   ref={ref}
                   onClick={open}
-                  src={item.thumbnail}
+                  src={item.meme}
                   alt={`Thumbnail ${index}`}
                   className="w-64 h-64"
                 />
